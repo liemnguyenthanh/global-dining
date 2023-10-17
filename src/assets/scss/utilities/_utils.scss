@@ -1,0 +1,13 @@
+@use 'mixin' as *;
+
+@include mq-down() {
+  [data-media]:not([data-media~='sp']) {
+    display: none !important;
+  }
+}
+
+@include mq-up() {
+  [data-media]:not([data-media~='pc']) {
+    display: none !important;
+  }
+}
